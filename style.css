@@ -914,6 +914,36 @@ body {
   border:0;
 }
 
+/* Focus indicators for keyboard navigation */
+.btn:focus,
+.main-nav a:focus,
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.event-card:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(255, 213, 79, 0.3);
+}
+
+/* Skip link for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--blue);
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1001;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
   .hero-overlay h1 {

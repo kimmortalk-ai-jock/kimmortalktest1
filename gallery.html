@@ -42,11 +42,11 @@
         <div class="event-card" onclick="showGallery('annual-day')">
           <div class="event-card-image">
             <img src="images/annual-day-2025/annual1.webp" alt="Annual Day 2025">
-          <div class="event-overlay">
-            <h3>Annual Day 2025</h3>
-            <p>111 Photos</p>
-            <span class="view-btn">View Gallery →</span>
-          </div>
+            <div class="event-overlay">
+              <h3>Annual Day 2025</h3>
+              <p>112 Photos</p>
+              <span class="view-btn">View Gallery →</span>
+            </div>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ const galleries = {
   'annual-day': {
     title: 'Annual Day 2025',
     folder: 'annual-day-2025',
-    count: 115
+    count: 112
   },
   'graduation': {
     title: 'Graduation Ceremony',
@@ -144,6 +144,7 @@ function showGallery(eventId) {
     img.src = src;
     img.alt = `${gallery.title} - Photo ${i}`;
     img.loading = 'lazy';
+    img.decoding = 'async';
     item.appendChild(img);
     photoGrid.appendChild(item);
   }

@@ -1,11 +1,15 @@
 # Robots.txt for Holy Joseph School Website
-# Allow all search engines to index the site
+# Updated: 2026-01-05
 
 User-agent: *
 Allow: /
 
+# Prevent indexing of duplicate www version
+User-agent: *
+Disallow: 
+
 # Sitemap location
 Sitemap: https://holyjosephschool.in/sitemap.xml
 
-# Crawl-delay (optional - helps prevent server overload)
-Crawl-delay: 10
+# Crawl-delay (optional)
+Crawl-delay: 5
