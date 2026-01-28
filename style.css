@@ -1,14 +1,14 @@
 
 /* style.css - Enhanced Professional Design with Mobile Improvements */
 :root{
-  --blue:#1565c0;
-  --blue-dark:#0d47a1;
-  --blue-light:#1976d2;
+  --blue:#0D3B66;
+  --blue-dark:#082847;
+  --blue-light:#1a5a8a;
   --accent:#ffd54f;
   --accent-dark:#ffa726;
   --muted:#666;
   --text:#222;
-  --light-bg:#f7fbff;
+  --light-bg:#FAF0CA;
   --max-width:1200px;
   --header-height:92px;
 }
@@ -841,6 +841,43 @@ body {
   color:var(--muted);
   line-height:1.8;
   margin-bottom:8px;
+}
+
+.social-links {
+  display:flex;
+  gap:16px;
+  margin-top:16px;
+}
+
+.social-links a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#fff;
+  color:var(--blue);
+  border:2px solid var(--blue);
+  text-decoration:none;
+  transition:all 0.3s;
+}
+
+.social-links a:hover {
+  background:var(--blue);
+  transform:translateY(-3px);
+  box-shadow:0 4px 12px rgba(13,59,102,0.3);
+}
+
+.social-links a svg {
+  width:24px;
+  height:24px;
+  fill:var(--blue);
+  transition:fill 0.3s;
+}
+
+.social-links a:hover svg {
+  fill:#fff;
 }
 
 .footer-bottom {
